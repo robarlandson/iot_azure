@@ -2,8 +2,12 @@
 var device = require('azure-iot-device');
 console.log(device);
 // Define the connection string to connect to IoT Hub
-var connectionString = 'HostName=ird-iot.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=wGWkFTnlKX6TYRTu/dVUjMdIKQOr+gdmPWzAc3w0Otk=';
+var connectionString = 'HostName=ird-iot.azure-devices.net;SharedAccessKeyName=device;SharedAccessKey=tuvky4hgnQrHPP2Thlxqm1bADykzQfPzXzvz3qEEKM4=';
 // Create the client instance specifying the preferred protocol
+
+// Set the connection string and device ID for the IoTHub connection
+// var deviceID = '<<Enter your deviceID>>'; // must match the deviceID in the connection string
+
 var client = new device.Client(connectionString, new device.Https());
 // Create a message and send it to IoT Hub.
 //var data = JSON.stringify({ '6aU52Ll34wVIYcpSgjBUWGMD6cDAYEMbpno9qWa+9FQ=': 'myFirstDevice', 'data': 'mydata' });

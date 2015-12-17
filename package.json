@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "azure-iot-device": "^1.0.0-preview.8"
+    "azure-iot-device": "latest"
   }
 }
